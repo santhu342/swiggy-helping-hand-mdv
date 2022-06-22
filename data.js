@@ -81,132 +81,120 @@ $(document).ready(function(){
             {
                 id:"1177174",
                 name:"K Divakar",
-                doj:"01-07-201",
+                doj:"01-07-2020",
                 status: "1"
             },
             {
-                id:"",
-                name:"",
+                id:"1036560",
+                name:"Reddy Prasad",
+                doj:"21-11-2019",
+                status: "1"
+            },
+            {
+                id:"1147967",
+                name:"K Kiran Kumar",
+                doj:"17-02-2020",
+                status: "1"
+            },
+            {
+                id:"1072539",
+                name:"K Samba Sivaji",
                 doj:"",
                 status: "1"
             },
             {
-                id:"",
-                name:"",
+                id:"1301939",
+                name:"K Vasu",
+                doj:"23-11-2020",
+                status: "1"
+            },
+            {
+                id:"1359486",
+                name:"J Ravi",
+                doj:"22-01-2021",
+                status: "1"
+            },
+            {
+                id:"1314518",
+                name:"P Abhilash",
+                doj:"07-12-2020",
+                status: "1"
+            },
+            {
+                id:"1256201",
+                name:"M N Raju",
+                doj:"28-09-2020",
+                status: "1"
+            },
+            {
+                id:"1556866",
+                name:"T Satish",
+                doj:"19-07-2021",
+                status: "1"
+            },
+            {
+                id:"1608609",
+                name:"P Ganesh",
+                doj:"23-08-2021",
+                status: "1"
+            },
+            {
+                id:"1586575",
+                name:"G Srinivas",
+                doj:"09-08-2021",
+                status: "1"
+            },
+            {
+                id:"1652275",
+                name:"P Ravi",
+                doj:"20-09-2021",
+                status: "1"
+            },
+            {
+                id:"1724783",
+                name:"P B V N Patrudu",
+                doj:"08-11-2021",
+                status: "1"
+            },
+            {
+                id:"1754569",
+                name:"H Prasanta",
+                doj:"29-11-2021",
+                status: "1"
+            },
+            {
+                id:"1801368",
+                name:"R Vasubabu",
+                doj:"23-02-2022",
+                status: "1"
+            },
+            {
+                id:"1888335",
+                name:"K Giri",
+                doj:"23-02-2022",
+                status: "1"
+            },
+            {
+                id:"1914150",
+                name:"K Raju",
+                doj:"14-03-2022",
+                status: "1"
+            },
+            {
+                id:"478141 ",
+                name:"K Krishna",
                 doj:"",
                 status: "1"
             },
             {
-                id:"",
-                name:"",
+                id:"778818",
+                name:"S Sai",
                 doj:"",
                 status: "1"
             },
             {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
-                doj:"",
-                status: "1"
-            },
-            {
-                id:"",
-                name:"",
+                id:"992634",
+                name:"P Praveen",
                 doj:"",
                 status: "1"
             },
@@ -242,7 +230,7 @@ $(document).ready(function(){
             status = `<span class=text-danger>In Active</span>`;
             if(user[i].status == 1){status = "<span class=text-success>Active</span>"}
             name = user[i].name.toUpperCase()
-            user_table += `<tr><td>${x}</td><td class='text-end'>${user[i].id}</td><td>${name}</td><td>${user[i].doj}</td><td>${status}</td></tr>`
+            user_table += `<tr><td>${x}</td><td >${user[i].id}</td><td>${name}</td><td>${user[i].doj}</td><td>${status}</td></tr>`
             x++;
             }
         $("#user").html(user_table)
