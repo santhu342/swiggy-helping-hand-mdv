@@ -69,6 +69,7 @@ $(document).ready(function(){
             {
                 id:"889434",
                 name:"R Santhosh Kumar",
+                phone:"8919450217",
                 doj:"12-09-2019",
                 status: "1"
             },
@@ -87,6 +88,7 @@ $(document).ready(function(){
             {
                 id:"1036560",
                 name:"Reddy Prasad",
+                phone:"9704539423",
                 doj:"21-11-2019",
                 status: "1"
             },
@@ -153,6 +155,7 @@ $(document).ready(function(){
             {
                 id:"1724783",
                 name:"P B V N Patrudu",
+                phone:"9676964499",
                 doj:"08-11-2021",
                 status: "1"
             },
@@ -181,7 +184,7 @@ $(document).ready(function(){
                 status: "1"
             },
             {
-                id:"478141 ",
+                id:"478141",
                 name:"K Krishna",
                 doj:"",
                 status: "1"
@@ -227,10 +230,14 @@ $(document).ready(function(){
   var user_table,x=1;
         user = sortByProp(user,"id","num")
         for(let i in user){
+            var phone = ""
             status = `<span class=text-danger>In Active</span>`;
             if(user[i].status == 1){status = "<span class=text-success>Active</span>"}
             name = user[i].name.toUpperCase()
-            user_table += `<tr><td>${x}</td><td >${user[i].id}</td><td>${name}</td><td>${user[i].doj}</td><td>${status}</td></tr>`
+            if(user[i].hasOwnProperty('phone'))
+            phone = user[i].phone
+            var img = `<img src='./images/${user[i].id}.jpg' class="img-fluid img-thumbnail" alt='${name}' />`
+            user_table += `<tr><td>${x}</td><td>${img}</td><td >${user[i].id}</td><td>${name}</td><td>${phone}</td><td>${user[i].doj}</td><td>${status}</td></tr>`
             x++;
             }
         $("#user").html(user_table)
