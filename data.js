@@ -67,7 +67,7 @@ var user = [{
 {
     id:"889434",
     name:"R Santhosh Kumar",
-    phone:"8919450217",
+    phone:"",
     doj:"12-09-2019",
     status: "1"
 },
@@ -153,7 +153,7 @@ var user = [{
 {
     id:"1724783",
     name:"P B V N Patrudu",
-    phone:"9676964499",
+    phone:"",
     doj:"08-11-2021",
     status: "1"
 },
